@@ -20,6 +20,13 @@ const bigNumber = 1234567890123456789n
 
 console.log(typeof outsideTemp);
 
+
+
+// Reference (Non Primitive)
+
+// Array , Objects , Functions
+
+
 const heroes = ["shaktiman", "nagraj","doga"];
 let myObj = {
     name : "abhinav",
@@ -33,6 +40,28 @@ const myFunction = function(){
 
 
 
-// Reference (Non Primitive)
+//***************************************************
 
-// Array , Objects , Functions 
+// stack (Primitive) , Heap(Non-Primitive)
+
+let myYoutubename ="Abhinav'sWorlddotcom"
+
+let anothername = myYoutubename 
+
+anothername = "bhaijismile"
+
+console.log(myYoutubename)
+
+console.log (anothername);
+
+let user = {
+    email: "user@google.com",
+    upi: "user@ybl",
+
+}
+
+let userone = user
+
+userone.email = "abhinav@google.com"
+
+console.log(userone);
